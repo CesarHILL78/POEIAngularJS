@@ -20,15 +20,10 @@
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
-      .otherwise({redirectTo:'/'});
-  }
-
-    function AppConfig($routeProvider) {
-    $routeProvider
       .when('/exo03', {
         templateUrl: 'src/app/exo03/exo03.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'home',
+        controller: 'Exo03Ctrl',
+        controllerAs: 'exo03',
       })
       .otherwise({redirectTo:'/'});
   }
