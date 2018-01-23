@@ -23,6 +23,16 @@
       .otherwise({redirectTo:'/'});
   }
 
+    function AppConfig($routeProvider) {
+    $routeProvider
+      .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'home',
+      })
+      .otherwise({redirectTo:'/'});
+  }
+
   function RunUtils($rootScope) {
     $rootScope.safeApply = function(fn) {
       var phase = $rootScope.$$phase;
