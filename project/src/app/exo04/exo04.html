@@ -1,0 +1,12 @@
+<div class="exo4"><input ng-model="exo04.valeur" /><button ng-click="exo04.fctValeur()">search</button>
+</div>
+
+<div class= "inputtt">{{exo04.settingService.city}}
+</div>
+
+<center>
+	<div ng-show = "exo04.meteoService.meteoListe.length > 0">
+		<img src = "http://openweathermap.org/img/w/{{exo04.meteoService.meteoListe[0].weather[0].icon}}.png">
+		<p>{{exo04.meteoService.meteoListe[0].main.temp}}°C</p>
+	</div>
+</center>
