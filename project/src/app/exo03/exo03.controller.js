@@ -1,6 +1,5 @@
 (function() {
   'use strict';
- 
 
   function Exo03Ctrl($location) {
     var vm = this;
@@ -10,9 +9,16 @@
       {name: '2 Fast 2 Furious', img: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/u1Snfl40rXmAJNiMyZUczUyFVuf.jpg', year: 2003},
       {name: 'Fast & Furious: Tokyo Drift', img: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/4ceW7kWPAc2uFG5WzYDbP8Od3gw.jpg', year: 2006}
     ];
+
+    vm.SaveFilm = SaveFilm;
+
+    vm.selected = null;
+
+    function SaveFilm(nom) {
+    vm.SaveFilm = nom;
+    }
       
   }
-  
 
   Exo03Ctrl.$inject = ['$location'];
 
