@@ -2,7 +2,7 @@
   'use strict';
 
   function moreCtrl($location) {
-    var vm = this;    
+    var vm = this;
   }
 
   moreCtrl.$inject = ['$location'];
